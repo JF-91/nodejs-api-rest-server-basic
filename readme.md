@@ -7,3 +7,6 @@ npm install express cors dotenv
  ## fase 2
 
  npm install mongoose bcryptjs express-validator
+
+## JWT
+npm install jsonwebtoken

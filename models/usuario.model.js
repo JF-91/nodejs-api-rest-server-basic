@@ -37,7 +37,9 @@ const usuarioSchema = Schema({
 //sobre escribir metodos de mongoose
 //para no ver el password en el objeto de creacion 
 usuarioSchema.methods.toJSON =  function (){
-    const  { __v, password, ...usuario } = this.toObject();
+
+    const  { _id,__v, password, ...usuario } = this.toObject();
+    usuario.uid = _id;
     return usuario
 }
 

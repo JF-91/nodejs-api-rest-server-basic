@@ -97,17 +97,28 @@ const usuariosDelete = async (req = request, res = response) => {
 
   const {id} = req.params
   
+  //param para el jwt
+ 
+
   //borrar fisicamente
   //const usuario = await Usuario.findByIdAndDelete(id);
 
   //borrar estado del usuario (mejor opcion)
   const usuario = await Usuario.findByIdAndUpdate(id, { estado: false } ); 
 
+
+  
+
   res.json({
     msg: "user deleted",
-    usuario
+    usuario,
+
+ 
   });
 };
+
+
+
 
 module.exports = {
   usuariosGet,
