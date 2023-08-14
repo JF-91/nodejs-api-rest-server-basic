@@ -10,3 +10,6 @@ npm install express cors dotenv
 
 ## JWT
 npm install jsonwebtoken
+
+## google auth
+npm install google-auth-library --save

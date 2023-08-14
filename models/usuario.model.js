@@ -1,6 +1,6 @@
 const {Schema, model} = require('mongoose');
 
-const usuarioSchema = Schema({
+const usuarioSchema = new Schema({
     nombre:{
         type:String,
         required: [true, 'El nombre es obligatorio'],
